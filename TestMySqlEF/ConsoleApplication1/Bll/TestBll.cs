@@ -45,5 +45,24 @@ namespace ConsoleApplication1.Bll
             return null;
         }
 
+        public void Table1Add(Table1Model model)
+        {
+            Mapper.CreateMap<Table1Model, Pocos.Table1>();
+            var poco = Mapper.Map<Table1Model, Pocos.Table1>(model);
+            _uow.Table1Repository.Add(poco);
+            _uow.Save();
+
+        }
+
+        public void Table1Update(Table1Model model)
+        {
+            //Mapper.CreateMap<Table1Model, Pocos.Table1>();
+            //var poco = Mapper.Map<Table1Model, Pocos.Table1>(model);
+            var poco = _uow.Table1Repository.GetSingle(s => s.Id == model.Id);
+
+            _uow.Table1Repository.Update(poco);
+            _uow.Save();
+
+        }
     }
 }

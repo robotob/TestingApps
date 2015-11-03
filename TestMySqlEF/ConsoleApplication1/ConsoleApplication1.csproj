@@ -63,9 +63,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="ToB.Common.GenericRepository, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\libs\ToB.Common.GenericRepository\ToB.Common.GenericRepository.dll</HintPath>
+    <Reference Include="ToB.Db.GenericRepository">
+      <HintPath>..\..\..\Components\Libs\GenericRepository\ToB.Db.GenericRepository.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

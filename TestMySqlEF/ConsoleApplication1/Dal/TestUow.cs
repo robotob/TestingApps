@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ToB.Common.GenericRepository;
+using ToB.Db.GenericRepository;
 
 namespace ConsoleApplication1.Dal
 {
